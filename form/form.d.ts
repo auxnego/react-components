@@ -1,7 +1,8 @@
 import {
   PropsWithChildren,
   //types for html
-  AllHTMLAttributes
+  AllHTMLAttributes,
+  MouseEventHandler
 } from "react";
 
 //global types
@@ -48,3 +49,22 @@ export type InputProps = LabelWrapperMainProps &
                            {}
                          > &
                          InputMainProps;
+
+
+/** Checkbox Base Component **/
+
+export type CheckboxBaseMainProps = {
+  id:string,
+  name?:string,
+  value:string,
+  onClick:MouseEventHandler
+};
+
+export type CheckboxBaseProps = ClassNameOptions &
+                                DivHTMLAttibutes<HTMLDivElement> &
+                                Config<
+                                  {root?:string, input?:string, icon?:string },
+                                  {root?:object, input?:object, icon?:object},
+                                  {}
+                                > &
+                                InputMainProps;
