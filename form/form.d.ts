@@ -18,12 +18,12 @@ export type LabelWrapperMainProps = {
   id:string
 };
 
-export type LabelWrapperProps = LabelWrapperMainProps &
-                                PropsWithChildren &
+export type LabelWrapperProps = PropsWithChildren &
                                 Config<
                                   {root?:string, label?:string},
                                   {root?:object, label?:object}, {}> &
-                                AllHTMLAttributes<HTMLElement>;
+                                AllHTMLAttributes<HTMLElement> &
+                                LabelWrapperMainProps;
 
 
 /** Input Component **/
@@ -31,15 +31,20 @@ export type LabelWrapperProps = LabelWrapperMainProps &
 export type InputMainProps = {
   name?:string,
   pre?:any,
-  post?:any
+  post?:any,
+  type?: "text"   |
+         "email"  |
+         "search" |
+         "number"
 };
 
-export type InputProps = InputMainProps &
-                         LabelWrapperMainProps &
+export type InputProps = LabelWrapperMainProps &
+                         PropsWithChildren &
                          ClassNameConfig &
                          InputHTMLAttributes<HTMLInputElement> &
                          Config<
                            {root?:string, label?:string, input?:string, union?:string},
                            {root?:object, label?:object, input?:object, union?:object},
                            {}
-                         >;
+                         > &
+                         InputMainProps;
