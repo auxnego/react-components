@@ -6,14 +6,14 @@ export type BasicConfig = {
 
 export type Config<ClassName = {}, Props = {}, Element = {}> = {
   setEl?:Element,
-  setProp?:Props,
-  setClas:ClassName
+  setProps?:Props,
+  setClass?:ClassName
 };
 
 
 
 export type ClassNameConfig = {
   classless?:boolean,
-  classPeefix?:string,
+  classPrefix?:string,
   className?:string,
 };
