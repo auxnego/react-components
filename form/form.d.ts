@@ -2,6 +2,7 @@ import {
   PropsWithChildren,
   //types for html
   AllHTMLAttributes,
+  ChangeEventHandler,
   MouseEventHandler
 } from "react";
 
@@ -68,3 +69,21 @@ export type CheckboxBaseProps = ClassNameOptions &
                                   {}
                                 > &
                                 InputMainProps;
+
+/** Radio Base Component **/
+
+export type RadioBaseMainProps = {
+  id?:string,
+  name:string,
+  value:string,
+  onChange?:ChangeEventHandler<HTMLInputElement>
+};
+
+export type RadioBaseProps = ClassNameOptions &
+                             Config<
+                               {root?:string, input?:string, sign?:string},
+                               {root?:object, input?:object, sign?:object},
+                               {}
+                             > &
+                             InputHTMLAttributes<HTMLInputElement> &
+                             RadioBaseMainProps;
