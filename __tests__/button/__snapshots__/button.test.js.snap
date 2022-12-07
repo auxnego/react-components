@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`disabled button 1`] = `
+<button
+  className="button button--disabled"
+  disabled={true}
+  onClick={[Function]}
+  role="button"
+>
+  Disabled Button
+</button>
+`;
+
+exports[`setEl=div button 1`] = `
+<div
+  className="button"
+  disabled={false}
+  onClick={[Function]}
+  role="button"
+>
+  Aceptar
+</div>
+`;
+
+exports[`simple button 1`] = `
+<button
+  className="button"
+  disabled={false}
+  onClick={[Function]}
+  role="button"
+>
+  Aceptar
+</button>
+`;
