@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With id and label 1`] = `
+<div
+  className=""
+>
+  <label
+    className=""
+    htmlFor="hello"
+  >
+    hello
+  </label>
+</div>
+`;
+
+exports[`Without id and label 1`] = `
+<div
+  className=""
+/>
+`;
+
+exports[`setClass: className=root and className=label 1`] = `
+<div
+  className="root"
+>
+  <label
+    className="label"
+    htmlFor="hello2"
+  >
+    hello2
+  </label>
+</div>
+`;
+
+exports[`setProps: add id='root' and id='label' 1`] = `
+<div
+  className=""
+  id="root"
+>
+  <label
+    className=""
+    htmlFor=""
+    id="label"
+  >
+    hello
+  </label>
+</div>
+`;

@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filled 1`] = `
+<div
+  className="input__root input__root--filled"
+>
+  <div
+    className="input__union"
+  >
+    <input
+      className="input"
+      id="ejemplo2"
+      name="ejemplo2"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={true}
+      value="filled"
+    />
+  </div>
+</div>
+`;
+
+exports[`Focus 1`] = `
+<div>
+  <div
+    class="input__root input__root--focus"
+    data-testid="root"
+  >
+    <div
+      class="input__union"
+    >
+      <input
+        class="input"
+        data-testid="ejemplo"
+        id="hi"
+        name="hi"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`label=Email: * 1`] = `
+<div
+  className="input__root"
+>
+  <label
+    className="input__label"
+    htmlFor="ejemplo3"
+  >
+    Email: *
+  </label>
+  <div
+    className="input__union"
+  >
+    <input
+      className="input"
+      id="ejemplo3"
+      name="ejemplo3"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`normal 1`] = `
+<div
+  className="input__root"
+>
+  <div
+    className="input__union"
+  >
+    <input
+      className="input"
+      id="ejemplo"
+      name="ejemplo"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={true}
+    />
+  </div>
+</div>
+`;

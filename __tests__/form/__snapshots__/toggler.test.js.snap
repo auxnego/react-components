@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change state with click 1`] = `
+<div>
+  <div
+    class="toggler__root toggler__on"
+  >
+    <div
+      class="toggler__input"
+    >
+      <input
+        id="basic"
+        name="basic"
+        type="hidden"
+        value="1"
+      />
+      <div
+        class="toggler__on toggler__on--actived"
+      />
+      <div
+        class="toggler__off"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`normal name=basic 1`] = `
+<div
+  className="toggler__root"
+  onClick={[Function]}
+>
+  <div
+    className="toggler__input"
+  >
+    <input
+      id="basic"
+      name="basic"
+      type="hidden"
+      value="0"
+    />
+    <div
+      className="toggler__on"
+    />
+    <div
+      className="toggler__off toggler__off--actived"
+    />
+  </div>
+</div>
+`;
+
+exports[`normal name=basic and initialStatus=true 1`] = `
+<div
+  className="toggler__root toggler__on"
+  onClick={[Function]}
+>
+  <div
+    className="toggler__input"
+  >
+    <input
+      id="basic"
+      name="basic"
+      type="hidden"
+      value="1"
+    />
+    <div
+      className="toggler__on toggler__on--actived"
+    />
+    <div
+      className="toggler__off"
+    />
+  </div>
+</div>
+`;
+
+exports[`normal name=basic and onValue=true and offValue=false 1`] = `
+<div
+  className="toggler__root"
+  onClick={[Function]}
+>
+  <div
+    className="toggler__input"
+  >
+    <input
+      id="basic"
+      name="basic"
+      type="hidden"
+      value="false"
+    />
+    <div
+      className="toggler__on"
+    />
+    <div
+      className="toggler__off toggler__off--actived"
+    />
+  </div>
+</div>
+`;
+
+exports[`normal name=basic and statusText Encendido/Apagado 1`] = `
+<div
+  className="toggler__root"
+  onClick={[Function]}
+>
+  <div
+    className="toggler__input"
+  >
+    <input
+      id="basic"
+      name="basic"
+      type="hidden"
+      value="0"
+    />
+    <div
+      className="toggler__on"
+    />
+    <div
+      className="toggler__off toggler__off--actived"
+    />
+  </div>
+  <label
+    className="toggler__label"
+    htmlFor="basic"
+  >
+    Apagado
+  </label>
+</div>
+`;
