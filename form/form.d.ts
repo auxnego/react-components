@@ -3,7 +3,8 @@ import {
   //types for html
   AllHTMLAttributes,
   ChangeEventHandler,
-  MouseEventHandler
+  MouseEventHandler,
+  ReactNode
 } from "react";
 
 //global types
@@ -87,3 +88,24 @@ export type RadioBaseProps = ClassNameOptions &
                              > &
                              InputHTMLAttributes<HTMLInputElement> &
                              RadioBaseMainProps;
+
+
+/** Toggler Component **/
+
+export type TogglerMainProps = {
+  name:string,
+  id?:string,
+  initialStatus?:boolean,
+  onClick?:MouseEventHandler<HTMLElement>,
+  offValue?:string,
+  onValue?:string,
+  size?:"sm",
+  statusText?:{on?:ReactNode, off?:ReactNode}
+};
+
+export type TogglerProps = AllHTMLAttributes<HTMLElement> & 
+                           Config<
+                             {root?:string, label?:string, input?:string, on?:string, off?:string},
+                             {root?:object, label?:object, input?:object}> & 
+                           ClassNameConfig &
+                           TogglerMainProps;
