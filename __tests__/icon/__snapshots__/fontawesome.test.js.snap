@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check icon 1`] = `
+<i
+  className="fa-check"
+/>
+`;
+
+exports[`check icon and changing base 1`] = `
+<i
+  className="fas-check"
+/>
+`;
+
+exports[`check icon and changing setEl 1`] = `
+<div
+  className="fa-check"
+/>
+`;
