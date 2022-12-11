@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu with classPrefix and ordered 1`] = `
+<ol
+  className="custom__root"
+>
+  <li
+    className="custom__item"
+    id="i-1"
+  >
+    elemento 1
+  </li>
+  <li
+    className="custom__item"
+    id={2}
+  >
+    <i>
+      elemento2
+    </i>
+  </li>
+  <li
+    className="custom__item"
+    id="id-3"
+  >
+    el3
+  </li>
+</ol>
+`;
+
+exports[`Menu with elements 1`] = `
+<ul
+  className="menu__root"
+>
+  <li
+    className="menu__item"
+    id="i-1"
+  >
+    elemento 1
+  </li>
+  <li
+    className="menu__item"
+    id={2}
+  >
+    <i>
+      elemento2
+    </i>
+  </li>
+  <li
+    className="menu__item"
+    id="id-3"
+  >
+    el3
+  </li>
+</ul>
+`;
+
+exports[`Menu without elements 1`] = `
+<ul
+  className="menu__root"
+/>
+`;
+
+exports[`Menu without elements and empty indicator 1`] = `
+<ul
+  className="menu__root"
+>
+  <li
+    className="menu__item"
+  >
+    No hay Elementos
+  </li>
+</ul>
+`;
