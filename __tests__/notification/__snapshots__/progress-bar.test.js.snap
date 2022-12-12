@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` with total=200 and current=200 and indicatorFn 1`] = `
+<div
+  className="progress-bar__root"
+>
+  <i>
+    200
+     / 
+    200
+  </i>
+  <div
+    className="progress-bar__bar"
+  >
+    <div
+      className="progress-bar__indicator progress-bar__indicator--100"
+    />
+  </div>
+</div>
+`;
+
+exports[`Indeterminated progress bar 1`] = `
+<div
+  className="progress-bar__root progress-bar__root--indeterminate"
+>
+  <div
+    className="progress-bar__bar"
+  >
+    <div
+      className="progress-bar__indicator"
+    />
+  </div>
+</div>
+`;
+
+exports[`With total and current=0 1`] = `
+<div
+  className="progress-bar__root"
+>
+  <div
+    className="progress-bar__bar"
+  >
+    <div
+      className="progress-bar__indicator progress-bar__indicator--0"
+    />
+  </div>
+</div>
+`;
+
+exports[`with total=200 and current=100 1`] = `
+<div
+  className="progress-bar__root"
+>
+  <div
+    className="progress-bar__bar"
+  >
+    <div
+      className="progress-bar__indicator progress-bar__indicator--50"
+    />
+  </div>
+</div>
+`;
