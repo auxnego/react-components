@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`No timer toats and open 1`] = `
+<div
+  className="toats"
+>
+  First Toast
+</div>
+`;
+
+exports[`closed toast 1`] = `null`;
