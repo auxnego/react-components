@@ -14,12 +14,16 @@ export default function ProgressBar(props:ProgressBarProps){
     current = 0,
     indicatorFn,
     indeterminate = false,
-    setClass = {root:"", bar:""},
-    setProps = {root:{}, bar:{}},
-    setEl = {bar:"div", barWrapper:"div"},
+    setClass = {},
+    setProps = {},
+    setEl = {},
     total = 0,
     ...more
   } = props;
+
+  setClass = {...setClass, root:"", bar:"" };
+  setProps = {...setProps, root:{}, bar:{}};
+  setEl = {...setEl, bar:"div", barWrapper:"div"};
 
   let percent = (current * 100) / total;
 

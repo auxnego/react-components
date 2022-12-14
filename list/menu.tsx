@@ -16,10 +16,13 @@ export default function Menu(props:MenuProps){
     items,
     ordered = false,
     onEmpty = null,
-    setClass = {root:"", item:""},
-    setProps = {root:{}, item:{}},
+    setClass = {},
+    setProps = {},
     ...more
   } = props;
+ 
+  setClass = {...setClass, root:"", item:"" };
+  setProps = {...setProps, root:{}, item:{} };
 
   //classNames
   let __classNames = {

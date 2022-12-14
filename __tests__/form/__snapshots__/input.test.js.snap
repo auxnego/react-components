@@ -2,7 +2,7 @@
 
 exports[`Filled 1`] = `
 <div
-  className="input__root input__root--filled"
+  className=""
 >
   <div
     className="input__union"
@@ -24,8 +24,7 @@ exports[`Filled 1`] = `
 exports[`Focus 1`] = `
 <div>
   <div
-    class="input__root input__root--focus"
-    data-testid="root"
+    class=""
   >
     <div
       class="input__union"
@@ -43,10 +42,10 @@ exports[`Focus 1`] = `
 
 exports[`label=Email: * 1`] = `
 <div
-  className="input__root"
+  className=""
 >
   <label
-    className="input__label"
+    className=""
     htmlFor="ejemplo3"
   >
     Email: *
@@ -68,7 +67,7 @@ exports[`label=Email: * 1`] = `
 
 exports[`normal 1`] = `
 <div
-  className="input__root"
+  className=""
 >
   <div
     className="input__union"

@@ -15,14 +15,17 @@ export default function Toggler(props:TogglerProps){
     id = name,
     initialStatus = false,
     onClick,
-    setClass = {root:"", label:"", input:"", on:"", off:""},
-    setProps = {root:{}, label:{}, input:{}},
+    setClass = {},
+    setProps = {},
     size = "",
     statusText = {},
     offValue = "0",
     onValue = "1",
     ...more
   } = props;
+
+  setClass = {...setClass, root:"", label:"", input:"", on:"", off:"" };
+  setProps = {...setProps, root:{}, label:{}, input:{} };
 
   let __withStatusText:boolean = !!Object.keys(statusText).length;
 

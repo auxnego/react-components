@@ -12,11 +12,14 @@ export default function LabelWrapper(props:LabelWrapperProps){
     children = null,
     id,
     label = id,
-    setProps = {root:{}, label:{}},
-    setClass = {root:"", label:""},
+    setProps = {},
+    setClass = {},
     ...more
   } = props;
 
+  setProps = {...setProps, root:{}, label:{} };
+  setClass = {...setClass, root:"", label:"" };
+  
   //props
   let __props = {
     root:{

@@ -17,10 +17,13 @@ export default function CheckboxBase(props:CheckboxBaseProps){
     name = id,
     value,
     onClick,
-    setClass = {root:"", input:"", icon:""},
-    setProps = {root:{}, input:{}, icon:{}},
+    setClass = {},
+    setProps = {},
     ...more
   } = props;
+
+  setClass = {...setClass, root:"", input:"", icon:"" };
+  setProps = {...setProps, root:{}, input:{}, icon:{} };
 
   //states
   let [$checked, setChecked] = useState<boolean>(!!more.checked);

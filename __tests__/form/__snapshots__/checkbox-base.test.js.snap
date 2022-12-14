@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Adding setProps for input and click event 1`] = `
+<div>
+  <div
+    class="checkbox-base__root checkbox-base__root--checked"
+  >
+    <input
+      class="checkbox-base__input"
+      id="example3"
+      name="example3"
+      type="checkbox"
+      value="ejemplo3"
+    />
+    <i
+      class="checkbox-base__icon fa fa-check"
+    />
+  </div>
+</div>
+`;
+
+exports[`Only id and value 1`] = `
+<div
+  className="checkbox-base__root"
+>
+  <input
+    className="checkbox-base__input"
+    id="example"
+    name="example"
+    onClick={[Function]}
+    type="checkbox"
+    value="ejemplo"
+  />
+</div>
+`;
+
+exports[`with id, name, value and checked 1`] = `
+<div
+  className="checkbox-base__root checkbox-base__root--checked"
+>
+  <input
+    checked={true}
+    className="checkbox-base__input"
+    id="ex2"
+    name="example2"
+    onClick={[Function]}
+    type="checkbox"
+    value="ejemplo2"
+  />
+  <i
+    className="checkbox-base__icon fa fa-check"
+  />
+</div>
+`;

@@ -21,10 +21,10 @@ exports[`Without id and label 1`] = `
 
 exports[`setClass: className=root and className=label 1`] = `
 <div
-  className="root"
+  className=""
 >
   <label
-    className="label"
+    className=""
     htmlFor="hello2"
   >
     hello2
@@ -35,12 +35,10 @@ exports[`setClass: className=root and className=label 1`] = `
 exports[`setProps: add id='root' and id='label' 1`] = `
 <div
   className=""
-  id="root"
 >
   <label
     className=""
     htmlFor=""
-    id="label"
   >
     hello
   </label>

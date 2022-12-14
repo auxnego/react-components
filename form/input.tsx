@@ -20,11 +20,14 @@ export default function Input(props:InputProps){
     name = id,
     pre = null,
     post = null,
-    setClass = {root:"", label:"", input:"", union:""},
-    setProps = {root:{}, label:{}, input:{}, union:{}},
+    setClass = {},
+    setProps = {},
     ...more
   } = props;
 
+  setClass = {...setClass, root:"", label:"", input:"", union:"" };
+  setProps = {...setProps, root:{}, label:{}, input:{}, union:{} };
+ 
   //states
   let [$focused, setFocus] = useState<boolean>(false);
   let [$value, setValue] = useState<string>(more.defaultValue || more.value || "");
