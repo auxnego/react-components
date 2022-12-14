@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`No open tooltip 1`] = `null`;
+
+exports[`opened tooltip 1`] = `
+<div
+  className="tooltip__root"
+>
+  <div
+    className="tooltip__arrow"
+  />
+  <div
+    className="tooltip__content"
+  >
+    Tooltip Base
+  </div>
+</div>
+`;
+
+exports[`opened tooltip with setClass , setEl and setProps 1`] = `
+<div
+  className="tooltip__root"
+>
+  <div
+    className="tooltip__arrow"
+  />
+  <div
+    className="tooltip__content"
+  >
+    Tooltip Base
+  </div>
+</div>
+`;
