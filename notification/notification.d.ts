@@ -26,6 +26,19 @@ export type ProgressBarProps = ClassNameConfig &
                                > &
                                ProgressBarMainProps;
 
+/** Toast Component **/
+
+export type ToastMainProps = {
+  closeTime?:number,
+  onClose:() => void,
+  open:boolean
+};
+
+export type ToastProps = PropsWithChildren &
+                         BasicConfig &
+                         AllHTMLAttributes<HTMLElement> &
+                         ToastMainProps;
+
 /** Tooltip Component **/
 
 export type TooltipMainProps = {
