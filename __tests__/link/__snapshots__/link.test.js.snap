@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`disabled link 1`] = `
+<span
+  className="link link--disabled"
+  disabled={true}
+>
+  Disabled Link
+</span>
+`;
+
+exports[`normal link 1`] = `
+<a
+  className="link"
+  disabled={false}
+  href="#active-link"
+>
+  actived Link
+</a>
+`;
