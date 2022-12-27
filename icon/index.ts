@@ -1,7 +1,9 @@
 import FontAwesomeIcon from "./fontawesome";
+import LoadingIcon from "./loading";
 
 export default FontAwesomeIcon;
 
 export {
-  FontAwesomeIcon
+  FontAwesomeIcon,
+  LoadingIcon
 };
