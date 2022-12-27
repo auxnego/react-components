@@ -18,7 +18,7 @@ export default function FontAwesome(props:FontAwesomeProps){
   } = props;
 
   //classNames
-  let __className = [!classless && `${base}-${to}`, className];
+  let __className = [!classless && `${base} fa-${to}`, className];
 
   //props
   let __props = {
