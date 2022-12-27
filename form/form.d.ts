@@ -13,6 +13,13 @@ import {
   Config
 } from "../global.d";
 
+import {
+  MenuItemMainProps
+} from "../list/list.d";
+
+import {
+  ButtonMainProps
+} from "../button/button.d.ts";
 
 /** LabelWrapper Component **/
 
@@ -109,3 +116,58 @@ export type TogglerProps = AllHTMLAttributes<HTMLElement> &
                              {root?:object, label?:object, input?:object}> & 
                            ClassNameConfig &
                            TogglerMainProps;
+
+
+/** Select Component **/
+
+export type SelectMainProps = {
+  getIndicatorContent?:(
+    selections:string[], 
+    options:MenuItemMainProps[], 
+    multiple?:boolean = false
+  ) => any, 
+  multiple?:boolean,
+  name?:string,
+  options?:MenuItemMainProps[],
+  onSelection?:(e:string[]|number[]) => void,
+  pre?:any,
+  post?:any,
+  splitter?:string
+};
+
+export type SelectProps = LabelWrapperMainProps &
+                          ClassNameConfig &
+                          AllHTMLAttributes<HTMLElement> &
+                          Config<
+                            {root?:string, label?:string, input?:string, indicator?:string, indicatorContent?:string, menu?:string, option?:string, icon?:string},
+                            {root?:object, label?:object, input?:object, indicator?:object, indicatorContent?:object, menu?:object, option?:object, icon?:object},
+                            {}
+                          > &
+                          SelectMainProps;
+
+
+/** Submit Component **/
+
+export type SubmitMainProps = {
+  loading:boolean,
+  loadingLabel?:ReactNode
+}
+
+export type SubmitProps = ButtonMainProps &
+                          PropsWithChildren &
+                          Config<
+                            {root?:string, loading?:string},
+                            {root?:object, loading?:object},
+                            {}
+                          > &
+                          AllHTMLAttributes<HTMLElement> &
+                          SubmitMainProps;
+
+/*** TYPES FOR HOOKS ***/
+
+export type UseSelectHookReturnValue = {
+
+  handleOption:MouseEventHandler<HTMLLIElement>,
+  selections:string[],
+
+};
