@@ -2,18 +2,18 @@
 
 exports[`check icon 1`] = `
 <i
-  className="fa-check"
+  className="fa fa-check"
 />
 `;
 
 exports[`check icon and changing base 1`] = `
 <i
-  className="fas-check"
+  className="fas fa-check"
 />
 `;
 
 exports[`check icon and changing setEl 1`] = `
 <div
-  className="fa-check"
+  className="fa fa-check"
 />
 `;
