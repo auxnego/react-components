@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loading submit 1`] = `
+<button
+  className="button button--disabled button__submit--loading"
+  disabled={true}
+  onClick={[Function]}
+  role="button"
+>
+  <i
+    className="fa fa-spinner animate-spin"
+  />
+  Cargando
+</button>
+`;
+
+exports[`normal submit 1`] = `
+<button
+  className="button button__submit"
+  disabled={false}
+  onClick={[Function]}
+  role="button"
+>
+  Enviar
+</button>
+`;
+
+exports[`normal submit 2`] = `
+<button
+  className="button button--disabled button__submit--loading"
+  disabled={true}
+  onClick={[Function]}
+  role="button"
+>
+  <i
+    className="fa fa-spinner animate-spin"
+  />
+  Esperando Datos
+</button>
+`;
