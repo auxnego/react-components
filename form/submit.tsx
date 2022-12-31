@@ -49,6 +49,7 @@ export default function Submit(props:SubmitProps){
     root:{
       ...more,
       ...setProps.root!,
+      type:"submit",
       className:clsx(__classNames.root)
     } as Attributes
 
