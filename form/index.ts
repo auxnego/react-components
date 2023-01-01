@@ -2,7 +2,7 @@ import LabelWrapper from "./label-wrapper";
 import Input from "./input";
 import CheckboxBase from "./checkbox-base";
 //import RadioBase from "./radio-base";
-import Toggler from "./toggler";
+import TogglerBase from "./toggler-base";
 import Submit from "./submit";
 
 export {
@@ -10,6 +10,6 @@ export {
   Input,
   LabelWrapper,
  // RadioBase
-  Toggler,
+  TogglerBase,
   Submit
 };

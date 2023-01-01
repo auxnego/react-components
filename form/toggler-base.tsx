@@ -3,10 +3,10 @@ import clsx from "clsx";
 
 //types
 import {
-  TogglerProps
+  TogglerBaseProps
 } from "./form.d";
 
-export default function Toggler(props:TogglerProps){
+export default function TogglerBase(props:TogglerBaseProps){
   //default props
   let {
     classless = false,
@@ -24,8 +24,8 @@ export default function Toggler(props:TogglerProps){
     ...more
   } = props;
 
-  setClass = {...setClass, root:"", label:"", input:"", on:"", off:"" };
-  setProps = {...setProps, root:{}, label:{}, input:{} };
+  setClass = {...setClass, root:"", label:"", container:"", input:"", on:"", off:"" };
+  setProps = {...setProps, root:{}, label:{}, container:{}, input:{} };
 
   let __withStatusText:boolean = !!Object.keys(statusText).length;
 
@@ -42,26 +42,30 @@ export default function Toggler(props:TogglerProps){
   let __classNames = {
 
     root:[!classless && {
-      "toggler__root":true,
-      "toggler__on":$status
+      "toggler-base__root":true,
+      "toggler-base__on":$status
     }, className, setClass.root!],
 
     label:[!classless && {
-      "toggler__label":true
+      "toggler-base__label":true
     }, setClass.label!],
 
+    container:[!classless && {
+      "toggler-base__container":true
+    }, setClass.container!],
+
     input:[!classless && {
-      "toggler__input":true
+      "toggler-base__input":true
     }, setClass.input!],
 
     on:[!classless && {
-      "toggler__on":true,
-      "toggler__on--actived":$status
+      "toggler-base__on":true,
+      "toggler-base__on--actived":$status
     }, setClass.on!],
 
     off:[!classless && {
-      "toggler__off":true,
-      "toggler__off--actived":!$status
+      "toggler-base__off":true,
+      "toggler-base__off--actived":!$status
     }, setClass.off!],
     
   };
@@ -70,19 +74,24 @@ export default function Toggler(props:TogglerProps){
   let __props = {
     root:{
       ...more,
-      ...setProps.root,
+      ...setProps.root!,
       className:clsx(__classNames.root),
       onClick:__handleClick
     } as Attributes,
 
+    container:{
+      ...setProps.container!,
+      className:clsx(__classNames.container)
+    } as Attributes,
+
     label:{
-      ...setProps.label,
+      ...setProps.label!,
       htmlFor:id,
       className:clsx(__classNames.label)
     } as Attributes,
 
     input:{
-      ...setProps.input,
+      ...setProps.input!,
       className:clsx(__classNames.input)
     } as Attributes,
 
@@ -105,10 +114,12 @@ export default function Toggler(props:TogglerProps){
   //views
   return (
     <div {...__props.root}>
-      <div {...__props.input}>
-        <input {...__props.hiddenInput} />
-        <div {...__props.on} />
-        <div {...__props.off} />
+      <div {...__props.container}>
+        <div {...__props.input}>
+          <input {...__props.hiddenInput} />
+          <div {...__props.on} />
+          <div {...__props.off} />
+        </div>
       </div>
       {__withStatusText ? <label {...__props.label}>{ $status ? statusText.on : statusText.off }</label> : null}
     </div>
