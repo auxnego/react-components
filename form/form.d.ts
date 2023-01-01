@@ -97,9 +97,9 @@ export type RadioBaseProps = ClassNameOptions &
                              RadioBaseMainProps;
 
 
-/** Toggler Component **/
+/** TogglerBase Component **/
 
-export type TogglerMainProps = {
+export type TogglerBaseMainProps = {
   name:string,
   id?:string,
   initialStatus?:boolean,
@@ -110,12 +110,12 @@ export type TogglerMainProps = {
   statusText?:{on?:ReactNode, off?:ReactNode}
 };
 
-export type TogglerProps = AllHTMLAttributes<HTMLElement> & 
+export type TogglerBaseProps = AllHTMLAttributes<HTMLElement> & 
                            Config<
-                             {root?:string, label?:string, input?:string, on?:string, off?:string},
-                             {root?:object, label?:object, input?:object}> & 
+                             {root?:string, label?:string, container?:string, input?:string, on?:string, off?:string},
+                             {root?:object, label?:object, container?:object, input?:object}> & 
                            ClassNameConfig &
-                           TogglerMainProps;
+                           TogglerBaseMainProps;
 
 
 /** Select Component **/

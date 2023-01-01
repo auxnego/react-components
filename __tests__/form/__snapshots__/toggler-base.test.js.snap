@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change state with click 1`] = `
+<div>
+  <div
+    class="toggler-base__root toggler-base__on"
+  >
+    <div
+      class="toggler-base__container"
+    >
+      <div
+        class="toggler-base__input"
+      >
+        <input
+          id="basic"
+          name="basic"
+          type="hidden"
+          value="1"
+        />
+        <div
+          class="toggler-base__on toggler-base__on--actived"
+        />
+        <div
+          class="toggler-base__off"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`normal name=basic 1`] = `
+<div
+  className="toggler-base__root"
+  onClick={[Function]}
+>
+  <div
+    className="toggler-base__container"
+  >
+    <div
+      className="toggler-base__input"
+    >
+      <input
+        id="basic"
+        name="basic"
+        type="hidden"
+        value="0"
+      />
+      <div
+        className="toggler-base__on"
+      />
+      <div
+        className="toggler-base__off toggler-base__off--actived"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`normal name=basic and initialStatus=true 1`] = `
+<div
+  className="toggler-base__root toggler-base__on"
+  onClick={[Function]}
+>
+  <div
+    className="toggler-base__container"
+  >
+    <div
+      className="toggler-base__input"
+    >
+      <input
+        id="basic"
+        name="basic"
+        type="hidden"
+        value="1"
+      />
+      <div
+        className="toggler-base__on toggler-base__on--actived"
+      />
+      <div
+        className="toggler-base__off"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`normal name=basic and onValue=true and offValue=false 1`] = `
+<div
+  className="toggler-base__root"
+  onClick={[Function]}
+>
+  <div
+    className="toggler-base__container"
+  >
+    <div
+      className="toggler-base__input"
+    >
+      <input
+        id="basic"
+        name="basic"
+        type="hidden"
+        value="false"
+      />
+      <div
+        className="toggler-base__on"
+      />
+      <div
+        className="toggler-base__off toggler-base__off--actived"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`normal name=basic and statusText Encendido/Apagado 1`] = `
+<div
+  className="toggler-base__root"
+  onClick={[Function]}
+>
+  <div
+    className="toggler-base__container"
+  >
+    <div
+      className="toggler-base__input"
+    >
+      <input
+        id="basic"
+        name="basic"
+        type="hidden"
+        value="0"
+      />
+      <div
+        className="toggler-base__on"
+      />
+      <div
+        className="toggler-base__off toggler-base__off--actived"
+      />
+    </div>
+  </div>
+  <label
+    className="toggler-base__label"
+    htmlFor="basic"
+  >
+    Apagado
+  </label>
+</div>
+`;
